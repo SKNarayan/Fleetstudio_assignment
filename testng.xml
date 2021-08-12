@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="fleetstudioTestSuite">
+    <listeners>
+        <listener class-name="com.fleetstudio.base.TestListeners"></listener>
+    </listeners>
+    <test name="TestedInChrome">
+        <parameter name="browser" value="chrome"></parameter>
+            <classes>
+                <class name="com.fleetstudio.testCase.WorkPageTest"></class>
+            </classes>
+    </test>
+    <test name="TestedInFirefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.fleetstudio.testCase.WorkPageTest"></class>
+        </classes>
+    </test>
+</suite>
